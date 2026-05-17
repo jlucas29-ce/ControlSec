@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orçamento | ControlSec Segurança</title>
+  <meta
+    name="description"
+    content="Solicite seu orçamento de segurança eletrônica com a ControlSec. Escolha os serviços e envie seu pedido."
+  />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+  <div id="Wrapper">
+    <div id="Header_wrapper">
+      <header id="Header">
+        <div id="Top_bar">
+          <div class="container">
+            <div class="column one">
+              <div class="top_bar_left">
+                <div class="logo">
+                  <a id="logo" href="index.html" title="ControlSec Segurança">
+                    <img
+                      src="logomarcacontrolsec.jpg"
+                      alt="ControlSec Logotipo"
+                      onerror="this.style.display='none'"
+                    />
+                    <span class="logo-text">ControlSec</span>
+                  </a>
+                </div>
+
+                <nav id="menu">
+                  <ul id="nav-list">
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                  </ul>
+                </nav>
+
+                <div class="menu_wrapper">
+                  <button class="responsive-menu-toggle" aria-label="Menu mobile" id="menuToggle">☰</button>
+                </div>
+              </div>
+
+              <div class="top_bar_right">
+                <a href="orcamento.html" class="action_button">Faça seu Orçamento</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="orcamento-hero">
+          <div class="orcamento-grid-bg"></div>
+          <div class="orcamento-container">
+            <div class="hero-eyebrow"><span></span> Orçamento rápido e personalizado</div>
+            <h1>Solicite seu orçamento de segurança eletrônica</h1>
+            <p>
+              Escolha os serviços desejados, informe os detalhes do local e envie seu pedido para nossa equipe.
+              Assim conseguimos montar uma proposta mais precisa para residência, comércio, condomínio ou empresa.
+            </p>
+          </div>
+        </section>
+      </header>
+    </div>
+
+    <div id="Content" role="main">
+      <section class="orcamento-section">
+        <div class="orcamento-container">
+          <div class="orcamento-layout">
+            <div class="orcamento-card fade-in">
+              <span class="section-label">Monte seu pedido</span>
+              <h2>Escolha os serviços</h2>
+              <p>
+                Marque uma ou mais opções abaixo e preencha seus dados para receber um atendimento mais rápido e um
+                orçamento alinhado à sua necessidade.
+              </p>
+
+              <form id="formOrcamento">
+                <div class="service-options">
+                  <div class="service-option">
+                    <label>
+                      <input type="checkbox" name="servicos" value="cftv" />
+                      <span>
+                        Instalação de câmeras de segurança (CFTV) com acesso remoto
+                        <small>Acompanhamento por smartphone e monitoramento visual do local.</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <label>
+                      <input type="checkbox" name="servicos" value="alarme" />
+                      <span>
+                        Sistemas de alarme monitorado
+                        <small>Proteção com alertas e suporte para residências e empresas.</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <label>
+                      <input type="checkbox" name="servicos" value="acesso" />
+                      <span>
+                        Controle de acesso
+                        <small>Portões eletrônicos, fechaduras digitais e biometria.</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <label>
+                      <input type="checkbox" name="servicos" value="cerca" />
+                      <span>
+                        Cerca elétrica e sensores perimetrais
+                        <small>Proteção externa com foco em prevenção de invasões.</small>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="service-option">
+                    <label>
+                      <input type="checkbox" name="servicos" value="manutencao" />
+                      <span>
+                        Manutenção e central de monitoramento
+                        <small>Manutenção preventiva, corretiva e acompanhamento técnico especializado.</small>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(85) 99999-9999" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tipo-imovel">Tipo de local</label>
+                    <select id="tipo-imovel" name="tipo-imovel">
+                      <option value="">Selecione</option>
+                      <option>Residência</option>
+                      <option>Comércio</option>
+                      <option>Empresa</option>
+                      <option>Condomínio</option>
+                      <option>Indústria</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" />
+                    <small id="cep-status" style="color:#aaa;font-size:0.8rem;"></small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cidade">Bairro</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Preenchido automaticamente pelo CEP" readonly style="background:#1a1a1a;cursor:not-allowed;opacity:0.7;" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="cidade-nome">Cidade / Estado</label>
+                    <input type="text" id="cidade-nome" name="cidadeNome" placeholder="Preenchido automaticamente pelo CEP" readonly style="background:#1a1a1a;cursor:not-allowed;opacity:0.7;" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="urgencia">Urgência</label>
+                    <select id="urgencia" name="urgencia">
+                      <option value="">Selecione</option>
+                      <option>Quero apenas cotação</option>
+                      <option>Preciso instalar em breve</option>
+                      <option>Urgente</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full">
+                    <label for="mensagem">Descreva sua necessidade</label>
+                    <textarea
+                      id="mensagem"
+                      name="mensagem"
+                      placeholder="Ex: preciso instalar 4 câmeras, alarme e controle de acesso em um comércio. Também gostaria de manutenção preventiva."
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group full">
+                    <div class="form-actions">
+                      <button type="submit" class="submit-btn">Enviar pedido de orçamento</button>
+                      <span class="form-note">Retornamos com a proposta conforme os detalhes informados.</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <aside class="orcamento-side fade-in">
+              <div class="side-block">
+                <span class="section-label">Atendimento</span>
+                <h3>Como funciona</h3>
+                <p>
+                  Você informa o que precisa, nossa equipe analisa a demanda e retorna com uma solução personalizada
+                  para o seu imóvel ou empresa.
+                </p>
+
+                <div class="benefits-grid">
+                  <div class="benefit-item">
+                    <h4>Orçamento mais preciso</h4>
+                    <p>Quanto mais detalhes você enviar, melhor conseguimos montar a proposta ideal.</p>
+                  </div>
+
+                  <div class="benefit-item">
+                    <h4>Atendimento especializado</h4>
+                    <p>Equipe com experiência em instalação, suporte técnico e monitoramento em segurança eletrônica.</p>
+                  </div>
+
+                  <div class="benefit-item">
+                    <h4>Serviço completo</h4>
+                    <p>Projetos para residências, comércios, condomínios, indústrias e empresas em geral.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="side-block">
+                <span class="section-label">Contato rápido</span>
+                <h3>Fale com a ControlSec</h3>
+                <p>
+                  Se preferir, você também pode falar diretamente com um especialista pelos canais abaixo.
+                </p>
+
+                <div class="quick-contact">
+                  <p>Atendimento direto via WhatsApp para agilizar seu orçamento.</p>
+                  <a href="https://wa.me/5585996968013" target="_blank" rel="noopener noreferrer">
+                    Chamar no WhatsApp
+                  </a>
+                </div>
+
+                <ul class="info-list">
+                  <li><strong>Telefone:</strong> (85) 9 8590-0719</li>
+                  <li><strong>E-mail:</strong> controlpti@gmail.com</li>
+                  <li><strong>Endereço:</strong> Rua Melo de Oliveira, 1461 – Jóquei Clube, Fortaleza / CE – Brasil</li>
+                  <li><strong>Horário:</strong> Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-strip">
+        <div class="features-inner">
+          <div class="feature-item fade-in">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#04edd6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Segurança Garantida</h4>
+              <p>Equipamentos de alta tecnologia com suporte técnico especializado.</p>
+            </div>
+          </div>
+
+          <div class="feature-item fade-in">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#04edd6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Atendimento 24h</h4>
+              <p>Suporte técnico disponível a qualquer hora para sua tranquilidade.</p>
+            </div>
+          </div>
+
+          <div class="feature-item fade-in">
+            <div class="feature-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#04edd6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>+10 anos de Experiência</h4>
+              <p>Referência em segurança eletrônica no Ceará com clientes satisfeitos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section orcamento-contact-section" id="contato">
+        <div class="contact-phone fade-in">
+          <div class="phone-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2.18 0h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7a2 2 0 0 1 1.72 2.03z"></path>
+            </svg>
+          </div>
+          <div class="phone-number">+55 85<br />9 8590-0719</div>
+          <p class="phone-label">Ligue agora e fale com um especialista</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-block fade-in">
+            <h3>Endereço</h3>
+            <h4>ControlSec Segurança</h4>
+            <p>Rua Melo de Oliveira, 1461 – Jóquei Clube<br />Fortaleza / CE – Brasil</p>
+            <br />
+            <p><a href="mailto:controlpti@gmail.com">controlpti@gmail.com</a></p>
+          </div>
+
+          <div class="contact-block fade-in">
+            <h3>Redes Sociais</h3>
+            <h4>Siga-nos</h4>
+            <p>
+              <a href="https://www.instagram.com/controlsecseguranca" target="_blank" rel="noopener noreferrer">
+                @controlsecseguranca
+              </a>
+            </p>
+            <br />
+            <p>
+              <a href="https://wa.me/5585996968013" target="_blank" rel="noopener noreferrer">
+                WhatsApp: 85 9 9696-8013
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-block fade-in">
+            <h3>Atendimento</h3>
+            <h4>Horário</h4>
+            <p>Segunda a Sexta: 8h às 18h</p>
+            <p>Sábado: 8h às 12h</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="Footer" role="contentinfo">
+      <div class="footer_copy">
+        <div class="container">
+          <div class="copyright">© 2026 ControlSec Segurança Eletrônica. Cuide do seu patrimônio conosco.</div>
+          <a id="backtotop" href="#" aria-label="Voltar ao topo" title="Voltar ao topo">↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="chaty-float">
+      <a
+        class="chaty-btn chaty-btn-wa"
+        href="https://wa.me/5585996968013"
+        target="_blank"
+        title="WhatsApp"
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2C8.27 2 2 8.27 2 16c0 2.44.65 4.73 1.78 6.72L2 30l7.44-1.75A13.93 13.93 0 0 0 16 30c7.73 0 14-6.27 14-14S23.73 2 16 2zm7.2 19.4c-.3.84-1.76 1.6-2.42 1.7-.62.1-1.4.14-2.26-.14a20.7 20.7 0 0 1-2.05-.76C13.1 21 10.9 18.6 10.3 17.77c-.6-.83-1.5-2.18-1.5-3.58 0-1.4.73-2.09 1-2.38.26-.29.57-.37.76-.37h.53c.17 0 .4-.06.63.48.23.56.8 1.95.87 2.09.07.14.11.3.02.48-.09.18-.14.3-.28.45-.14.16-.3.35-.42.47-.14.14-.29.3-.12.58.17.28.74 1.22 1.58 1.97.54.48 1.3.98 1.6 1.09.28.11.45.09.61-.05l.85-.98c.21-.24.42-.16.7-.06.28.1 1.8.85 2.1.99.3.14.5.2.57.32.07.1.07.6-.23 1.44z"/>
+        </svg>
+      </a>
+
+      <a
+        class="chaty-btn chaty-btn-ig"
+        href="https://www.instagram.com/controlsecseguranca"
+        target="_blank"
+        title="Instagram"
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // ================= MÁSCARA TELEFONE =================
+    const telInput = document.getElementById('telefone');
+
+    telInput.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 10) {
+        v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+      } else if (v.length > 6) {
+        v = v.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
+      } else if (v.length > 2) {
+        v = v.replace(/^(\d{2})(\d+)$/, '($1) $2');
+      } else if (v.length > 0) {
+        v = v.replace(/^(\d+)$/, '($1');
+      }
+      e.target.value = v;
+    });
+
+    telInput.addEventListener('blur', () => {
+      const digits = telInput.value.replace(/\D/g, '');
+      if (digits.length < 10) {
+        telInput.setCustomValidity('Informe um telefone válido: (XX) XXXXX-XXXX');
+        telInput.reportValidity();
+      } else {
+        telInput.setCustomValidity('');
+      }
+    });
+
+    // ================= VALIDAÇÃO E-MAIL =================
+    const emailInput = document.getElementById('email');
+
+    emailInput.addEventListener('blur', () => {
+      const v = emailInput.value.trim();
+      if (v && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
+        emailInput.setCustomValidity('Informe um e-mail válido: exemplo@dominio.com');
+        emailInput.reportValidity();
+      } else {
+        emailInput.setCustomValidity('');
+      }
+    });
+
+    emailInput.addEventListener('input', () => emailInput.setCustomValidity(''));
+
+    // ================= VIACEP =================
+    const cepInput = document.getElementById('cep');
+    const cidadeInput = document.getElementById('cidade');
+    const cidadeNomeInput = document.getElementById('cidade-nome');
+    const cepStatus = document.getElementById('cep-status');
+
+    cepInput.addEventListener('input', (e) => {
+      let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+      if (v.length > 5) v = v.replace(/^(\d{5})(\d{0,3})$/, '$1-$2');
+      e.target.value = v;
+    });
+
+    cepInput.addEventListener('blur', async () => {
+      const digits = cepInput.value.replace(/\D/g, '');
+      if (digits.length !== 8) {
+        cepStatus.textContent = '';
+        return;
+      }
+
+      cepStatus.textContent = 'Buscando endereço...';
+      cidadeInput.value = '';
+      cidadeNomeInput.value = '';
+
+      try {
+        const res = await fetch(`https://viacep.com.br/ws/${digits}/json/`);
+        const data = await res.json();
+
+        if (data.erro) {
+          cepStatus.textContent = '❌ CEP não encontrado.';
+          return;
+        }
+
+        cidadeInput.value = data.bairro || '';
+        cidadeNomeInput.value = `${data.localidade} / ${data.uf}`;
+        cepStatus.textContent = `✅ ${data.logradouro ? data.logradouro + ', ' : ''}${data.localidade}`;
+      } catch {
+        cepStatus.textContent = '❌ Erro ao buscar CEP. Tente novamente.';
+      }
+    });
+  </script>
+</body>
+</html>

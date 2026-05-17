@@ -1,0 +1,18 @@
+# .NET — compilados e temporários
+MinhaApi/bin/
+MinhaApi/obj/
+MinhaApi/*.user
+
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dados sensíveis
+orcamento.json
+
+# Logs
+*.log
